@@ -15,10 +15,10 @@ module.exports.authenticate = function(req, res) {
 	console.log(req.body);
 	passportConfig.authenticate('local', function(err, user, info) {
 		if (err || !user) {
-			return res.render('index');
+			return res.redirect('/');
 		}
 		req.login(user,function(err) {
-			return res.render('index');
+			return res.redirect('/');
 		})
 	})(req,res);
 };
@@ -35,7 +35,7 @@ module.exports.register = function(req, res) {
 		})
 			.then(function(user) {
 				req.login(user,function(err) {
-					return res.render('index');
+					return res.redirect('/');
 				})
 			});
 	});

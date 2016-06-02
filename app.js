@@ -4,11 +4,19 @@ var path = require('path');
 var bp = require('body-parser');
 var cookie = require('cookie-parser');
 var session = require('express-session');
-var secret = require('./credentials').secret;
 var passportConfig = require('./config/passportConfig');
 var models = require('./app_api/models');
 var bcrypt = require('bcrypt');
 var port = process.env.PORT || 3000;
+
+var secret;
+
+if (process.env.SECRET) {
+	secret = process.env.SECRET;
+}
+else {
+	secret = require('./credentials').secret;
+}
 
 app.use(bp.urlencoded({ extended : true }));
 app.use(bp.json());
