@@ -52,7 +52,7 @@ module.exports.destroy = function(req, res) {
 	});
 };
 
-module.exports.update = function(req,res){
+module.exports.update = function(req,res) {
     var updatedUser = req.body;
     models.User.upsert(updatedUser)
         .then(function(bool) {

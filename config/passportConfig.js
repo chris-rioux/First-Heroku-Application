@@ -17,8 +17,8 @@ passport.use(new LocalStrategy(
 			}
 			bcrypt.compare(password, user.password, function(err, result) {
 				if (err || !result) {
-					console.log(password);
-					console.log(user.password);
+					//console.log(password);
+					//console.log(user.password);
 					return callback(null, false);
 				}
 				return callback(null, user);
