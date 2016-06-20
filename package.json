@@ -26,6 +26,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/chris-rioux/First-Heroku-Application"
+  },
   "author": "ChrisRioux",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+  	"url": "https://github.com/chris-rioux/First-Heroku-Application/issues"
+  },
+  "homepage": "https://github.com/chris-rioux/First-Heroku-Application#readme"
 }
