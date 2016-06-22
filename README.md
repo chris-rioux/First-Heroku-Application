@@ -1,7 +1,7 @@
-Week 15 Skill Distillery project leveraging the stack below to develop a Full Stack JavaScript application.
+Week 15 Skill Distillery project leveraging the stack below to develop a JavaScript password encryption application.
 
-  - HTML
-  - CSS
+  - HTML5
+  - CSS3
   - Bootstrap v3
   - JS
   - jQuery
